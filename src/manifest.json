@@ -1,0 +1,12 @@
+{
+	"manifest_version": 3,
+	"name": "Simple Redirect",
+	"description": "Replace the matched part of URL and redirect",
+	"version": "1.0",
+	"permissions": ["storage", "tabs"],
+	"host_permissions": ["<all_urls>"],
+	"options_page": "options.html",
+	"background": {
+		"service_worker": "background.js"
+	}
+}
