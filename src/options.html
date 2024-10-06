@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Simple Redirect Options</title>
-    <script src="options.js"></script>
+    <title>Replace and Redirect Options</title>
 </head>
 <body>
-    <h1>Simple Redirect Settings</h1>
+    <h1>Settings</h1>
     <!-- Enable Extension Toggle -->
     <label>
-        <input type="checkbox" id="extensionToggle"> Enable Extension
+		<input type="checkbox" id="extensionToggle"> Enable Extension
     </label>
     <br><br>
-    <textarea id="redirectRules" rows="10" cols="50" placeholder="Enter rules in the format: match.part.of.url,new.part.of.url"></textarea><br>
+    <textarea id="redirectRules" rows="5" cols="80"></textarea><br>
     <button id="saveButton">Save</button>
+    <br>
+    <h2>How to set up</h2>
+	<p>1. Toggle Enable Extension</p>
+    <p>2. Enter rules in the format: <code>redirect1.from,redirect1.to</code></p>
+    <p>Example:</p>
+    <p><code>redirect1.from,redirect1.to</code><br><code>redirect2.from,redirect2.to</code></p>
+    <p>3. Save</p>
+    <h2>Important Notes:</h2>
+    <ul>
+        <li>Avoid Spaces: Do not include spaces in your URLs or parameters.</li>
+        <li>Keyword Caution: Avoid using overly short or common words as they may unintentionally trigger redirections.</li>
+        <li>Prevent Loops: Ensure that your redirections do not create infinite loops.</li>
+    </ul>
+    <script src="options.js"></script>
 </body>
 </html>

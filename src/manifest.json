@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-	"name": "Simple Redirect",
+	"name": "Replace and Redirect",
 	"description": "Replace the matched part of URL and redirect",
 	"version": "1.0",
 	"permissions": ["storage", "tabs"],
